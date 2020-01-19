@@ -16,7 +16,7 @@ public class ProjectEuler {
 	}
 
 	private static void problem002(String[] args) {
-		ProblemTwo pt = new ProblemTwo();
+		Problem002 pt = new Problem002();
 		System.out.println("Problem 002; sum even Fibonacci numbers up to [" + args[1] + "] = ["
 				+ pt.sumEvenFibo(Long.parseLong(args[1])) + "]");   	
 	}

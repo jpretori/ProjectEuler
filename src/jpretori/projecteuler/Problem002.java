@@ -1,6 +1,6 @@
 package jpretori.projecteuler;
 
-public class ProblemTwo {
+public class Problem002 {
     public long sumEvenFibo(long max) {
     	long fibo_small = 1;
     	long fibo_large = 2;
