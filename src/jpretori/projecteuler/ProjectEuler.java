@@ -7,6 +7,8 @@ public class ProjectEuler {
 		System.out.println("------- ------- -------");
     	problem002(args);
 		System.out.println("------- ------- -------");
+    	problem003(args);
+		System.out.println("------- ------- -------");
 	}
 
 	private static void problem001(String[] args) {
@@ -19,6 +21,12 @@ public class ProjectEuler {
 		Problem002 pt = new Problem002();
 		System.out.println("Problem 002; sum even Fibonacci numbers up to [" + args[1] + "] = ["
 				+ pt.sumEvenFibo(Long.parseLong(args[1])) + "]");   	
+	}
+	
+	private static void problem003(String[] args) {
+		Problem003 pt = new Problem003();
+		System.out.println("Problem 003; largest prime factor of [" + args[2] + "] = ["
+				+ pt.largestPrimeFactor(Long.parseLong(args[2])) + "]");
 	}
 
 }
