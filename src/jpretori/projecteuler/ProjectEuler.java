@@ -18,6 +18,16 @@ public class ProjectEuler {
 		System.out.println("------- ------- -------");
 		problem003(p);
 		System.out.println("------- ------- -------");
+		problem004(p);
+		System.out.println("------- ------- -------");
+		
+	}
+
+	private static void problem004(Properties p) {
+		Problem004 pt = new Problem004();
+		int digits = Integer.parseInt(p.getProperty("problem004"));
+		System.out.println("Problem 004; largest palindrome that is a product of numbers with [" 
+		+ digits + "] digits is [" + pt.largestPalindrome(digits) + "]");
 	}
 
 	private static void problem001(Properties p) {
