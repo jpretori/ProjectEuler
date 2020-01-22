@@ -20,7 +20,16 @@ public class ProjectEuler {
 		System.out.println("------- ------- -------");
 		problem004(p);
 		System.out.println("------- ------- -------");
+		problem005(p);
+		System.out.println("------- ------- -------");
 		
+	}
+
+	private static void problem005(Properties p) {
+		Problem005 pt = new Problem005();
+		int max_divisor = Integer.parseInt(p.getProperty("problem005"));
+		System.out.println("Problem 005; smallest number that is evenly divisible by all the numbers from 1 to [" 
+		+ max_divisor + "] is [" + pt.smallestMultiple(max_divisor) + "]");
 	}
 
 	private static void problem004(Properties p) {
