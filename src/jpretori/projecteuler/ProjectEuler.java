@@ -22,7 +22,16 @@ public class ProjectEuler {
 		System.out.println("------- ------- -------");
 		problem005(p);
 		System.out.println("------- ------- -------");
+		problem006(p);
+		System.out.println("------- ------- -------");
 		
+	}
+
+	private static void problem006(Properties p) {
+		Problem006 pt = new Problem006();
+		int max_num = Integer.parseInt(p.getProperty("problem006"));
+		System.out.println("Problem 006; (Sum of squares) - (square of the sums) of all the natural numbers up to [" 
+				+ max_num + "] is [" + pt.sumSquareDifference(max_num) + "]");
 	}
 
 	private static void problem005(Properties p) {
