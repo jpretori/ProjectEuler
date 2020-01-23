@@ -24,7 +24,16 @@ public class ProjectEuler {
 		System.out.println("------- ------- -------");
 		problem006(p);
 		System.out.println("------- ------- -------");
+		problem007(p);
+		System.out.println("------- ------- -------");
 		
+	}
+
+	private static void problem007(Properties p) {
+		Problem007 pt = new Problem007();
+		int n = Integer.parseInt(p.getProperty("problem007"));
+		System.out.println("Problem 007; The  [" + n + "]th prime number is [" 
+				+ pt.nthPrime(n) + "]");
 	}
 
 	private static void problem006(Properties p) {
