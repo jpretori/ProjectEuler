@@ -8,7 +8,7 @@ public class ToolPack {
 				j++) {
 			is_prime = !(candidate % j == 0);
 		}
-		return is_prime;
+		return is_prime || (candidate == 2);
 	}
 
 }

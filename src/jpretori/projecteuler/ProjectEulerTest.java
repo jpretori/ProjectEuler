@@ -8,6 +8,30 @@ import org.junit.jupiter.api.Test;
 class ProjectEulerTest {
 
 	@Test
+	void problem010_17() {
+		Problem010 pt = new Problem010();
+		assertEquals(41, pt.primeSummation(17));
+	}
+
+	@Test
+	void problem010_2001() {
+		Problem010 pt = new Problem010();
+		assertEquals(277050, pt.primeSummation(2001));
+	}
+
+	@Test
+	void problem010_140759() {
+		Problem010 pt = new Problem010();
+		assertEquals(873608362, pt.primeSummation(140759));
+	}
+
+	@Test
+	void problem010_2000000() {
+		Problem010 pt = new Problem010();
+		assertEquals(142913828922L, pt.primeSummation(2000000));
+	}
+
+	@Test
 	void problem009_1000() {
 		Problem009 pt = new Problem009();
 		assertEquals(31875000, pt.pythagoreanTripletProduct(1000));
