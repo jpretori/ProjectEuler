@@ -26,7 +26,7 @@ class Problem013Test {
 	@Test
 	void test_large() throws IOException {
 		ArrayList<String> nums = new ArrayList<String>(100);
-		FileReader fr = new FileReader("src/test/resources/problem013.data");
+		FileReader fr = new FileReader("test/resources/problem013.data");
 		BufferedReader br = null;
 		try {
 			br = new BufferedReader(fr);
